@@ -1,7 +1,26 @@
 body {background-color: pink;}
+/*h1 {font-size: 40px;}*/
 h1 {background-color: blue; font-size: 40px; display: flex; justify-content: center; color: white;text-decoration: underline; }
 p {color: black;}
 .ParrafoBlanco {color: white;}
 .ParrafoAmarillo {color: yellow;}
-/*.Titulo {background-color: blue;text-decoration: underline; color: white;}*/
-.Imagen {width: 600px; height: 400px}
+.Titulo {background-color: blue;display: flex; justify-content: center; color: white;text-decoration: underline;}
+.ImagenMediana {width: 600px; height: 400px}
+.claseAside {background-color: yellow;}
+.col_100 social-bar {background-color: white;}
+.Imagen150x150 {height: 150px; width: 150px}
+.RedSocial {height: 50px; width: 50px}
+.ventanaFlotante {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 6px 6px 6px 6px;
+    top: 150px;
+    left: auto;
+    margin-left: 650px;
+    padding: 10px 0 0;
+    position: fixed;
+    text-align: center;
+    height: 90px;
+    width: 90px;
+    z-index: 15;
+}
