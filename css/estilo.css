@@ -1,0 +1,172 @@
+body {
+  background-color: pink;
+}
+header {
+  background-image:url('https://media.tycsports.com/files/2019/01/29/40299/choripan.jpeg')
+}
+p {
+  color: black;
+}
+ul li {
+  display: inline-block;
+}
+main {
+  float: left;
+  width: 100%;
+  background: red;
+}
+nav {
+  float: left;
+  width: 50%;
+  background: blue;
+  height: 400px;
+}
+section {
+  float: left;
+  width: 50%;
+  background: yellow;
+  height: 400px;
+}
+section1 {
+  float: left;
+  width: 50%;
+  background:  #ffff00;
+  height: 400px;
+}
+section2 {
+  float: left;
+  width: 50%;
+  background:  #fff000;
+  height: 400px;
+}
+aside {
+  float: left;
+  width: 50%;
+  background: green;
+  height: 400px;
+}
+aside1 {
+  float: left;
+  width: 50%;
+  background: #90EE90;
+  height: 400px;
+}
+aside2 {
+  float: left;
+  width: 50%;
+  background: #00FF00 ;
+  height: 400px;
+}
+aside3 {
+  float: left;
+  width: 50%;
+  background: #adff2f ;
+  height: 400px;
+}
+footer {
+  width: 100%;
+  background: white;
+
+}
+
+.ParrafoBlanco {
+  color: white;
+}
+.ParrafoAmarillo {
+  color: yellow;
+}
+.ParrafoNegro {
+  color: black;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: underline;
+  font-size: 50px;
+}
+h2 {
+  display: flex;
+  justify-content: left;
+  color: red;
+  font-size: 30px;
+}
+.centrada {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.ImagenMediana {
+  height: 300px;
+}
+.ImagenGrande {
+  height: 200px;
+}
+.Imagenes150x150 {
+  height: 150px;
+}
+.RedSocial {
+  height: 50px;
+  border-radius: 50%;
+  align-items: center;
+}
+/*********************************************************************************/
+/* Ventana Flotante loca Whats                                                                  */
+/*********************************************************************************/
+.ventanaFlotante {
+  height: 100px;
+  border-radius: 50%;
+  top: 15%;
+  margin-left: 85%;
+  position: fixed;
+}
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+.button
+{
+  display: inline-block;
+  margin-top: 2em;
+  padding: 1em 3em;
+  background: #C4376B;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+  -ms-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+  letter-spacing: 0.20em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.90em;
+  color: #FFF;
+}
+.button:hover
+{
+  background: #D64077;
+}
+
+.button:active
+{
+  background: #BD3567;
+}
+
+.buttonMenu
+{
+  display: inline-block;
+  margin-top: 2em;
+  padding: 1em 3em;
+  background: #A45E42;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+  -ms-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+  letter-spacing: 0.20em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.90em;
+  color: #FFF;
+}
