@@ -21,14 +21,16 @@
   </Header>
   <main>
     <ul class="button">
-      <li>Menu</li>
-      <li>Ingredientes</li>
-      <li>Preparacion</li>
-      <li>Finalmente</li>
+      <li><a class="button" href="#Ingredientes">Ingredientes</li>
+      <li><a class="button" href="#Preparacion">Preparacion</li>
+      <li><a class="button" href="#Finalmente">Finalmente</li>
+        <li><a class="button" href="#Ubicacion">Ubicacion</li>
+      <li><a class="button" href="contacto.html">Contacto</a></li>
     </ul>
+
 </main>
 <nav>
-    <h3 class="buttonMenu">Lista de ingredientes:</h3>
+    <h3 class="buttonMenu" id="Ingredientes">Lista de ingredientes:</h3>
     <ul>
       <li>Pan</li>
       <li>Chimichurri</li>
@@ -37,7 +39,7 @@
     </ul>
     <br>
     <!-- Lista paso a paso-->
-    <h3 class="buttonMenu">Preparacion:</h3>
+    <h3 class="buttonMenu" id="Preparacion">Preparacion:</h3>
     <ol>
       <li>Colocar el embutido en la parrilla a fuego medio</li>
       <li>Darlo vuelta a los 15 minutos</li>
@@ -46,36 +48,49 @@
       <li>Intruducirlo completo en el pan</li>
       <li>Condimentar con Chimichurri o salsa criolla a gusto</li>
     </ol>
-    <p class="ParrafoAmarillo">Parrilla al carbon, vuelta y vuelta, con 15 minutos de coccion y luego se corta al medio en forma de mariposa</p>
-    <br>
   </nav>
   <br>
-  <section1>
-  <!-- Video bochi cocinando-->
-  <p class="ParrafoNegro">El bochi (wtf???) nos enseña su secreto para preparar el chori de cancha</p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/ugLq-E5M89I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <br>
 
-</section1>
-<aside1>
+<aside>
   <h3 class="buttonMenu">Recetas amigas:</h3><br>
-  <a href="https://mauropeatencio.github.io/PotreroEDLP/" target="_blank"><img src="./imagenes/receta.jpg" alt="A comer!" class="Imagen150x150"/></a><br>
+  <a href="https://mauropeatencio.github.io/PotreroEDLP/" target="_blank"><img class="Imagen150x150" src="./imagenes/receta.jpg" alt="A comer!" /></a><br>
   <a class="button" href="https://rociob88.github.io/clase3/" target="_blank">Receta 1</a>
   <a class="button" href="https://diegoakd11.github.io/Front-End-Curso/" target="_blank">Receta 2</a>
   <a class="button" href="https://mauropeatencio.github.io/PotreroEDLP/" target="_blank">Receta 3</a>
-</aside1>
-<aside2>
+</aside>
+
+<section>
+  <aside >
+
+
+  <p class="ParrafoAmarillo">Parrilla al carbon, vuelta y vuelta, con 15 minutos de coccion y luego se corta al medio en forma de mariposa</p>
+  <img class="ImagenMediana" src="./imagenes/mariposa.jpg" alt="Mariposa">
+</aside>
+<aside>
+<!-- Video bochi cocinando-->
+<h3 class="buttonMenu" id="Finalmente">Finalmente:</h3>
+<p class="ParrafoNegro">El bochi (wtf???) nos enseña su secreto para preparar el chori de cancha</p>
+<iframe class ="Video" width="560" height="315" src="https://www.youtube.com/embed/ugLq-E5M89I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</aside>
+</section>
+<aside>
+
+  <h3 class="buttonMenu" id="Ubicacion">Ubicacion:</h3>
   <p>Lugar tipico donde se puede puede comper un buen chorizo</p>
   <!-- Aca se comen los mejores choris, ubicacion-->
   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3550.2553843017913!2d-57.940482918525106!3d-34.91238374574095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1650926227829!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</aside2>
-<section2>
+</aside>
+
+<section>
+
+
+<aside>
   <!-- Imagen del chori dominguez local-->
     <p>De yapa, el chori mas famoso de todos... el chori Domingues</p>
   <img class="ImagenMediana" src="./imagenes/fotoChoriDominguez.jpg" alt="Que jugador!" >
   <br>
-</section2>
-<aside3>
+</aside>
+<aside>
   <p>Enlace patrocinado</p>
   <div class="centrada">
 
@@ -84,10 +99,10 @@
   <img class="ImagenMediana" src="./imagenes/chorilandia.jpg" alt="Los chorizos argentinos que pagamos entre todos...">
   </a>
   </div>
-</aside3>
+</aside>
+</section>
 
-
-    <footer>
+    <footer class="pieFlotante">
 
         <a target="_blank" href="https://www.facebook.com/dialog/feed?app_id=273012503131272&amp;link=https://peterpincha.github.io/FrontEndEDLP/">
           <img src="./imagenes/facebook.png" class="RedSocial" alt="FB"/></a>
