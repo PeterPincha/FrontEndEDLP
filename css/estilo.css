@@ -17,19 +17,54 @@ main {
   background: red;
   clear: both;
 }
+.CabeceraTitulo{
+  display: flex;
+  justify-content:  center;
+  align-items: flex-start;
+}
+.Cabecera{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.Contenedor{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.Izquierda {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.Orden{
+  display: flex;
+  justify-content: flex-End;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-flow: wrap;
+}
+.Pie {
+  display: flex;
+  justify-content:  center;
+  align-items: flex-end;
+}
+
 nav {
   float: left;
-  width: 50vw;
+  width: 30vw;
   background: blue;
-  height: 50vh;
+  height: 200vh;
   margin: 1%;
   padding: 2px;
   border:  2px solid black;
   box-sizing: border-box;
+  overflow: scroll;
 }
 section {
-  float: left;
-  width: 100vw;
+  float:  right;
+  width: 65vw;
   background: yellow;
   height: 60vh;
   margin: 1%;
@@ -39,7 +74,7 @@ section {
 }
 aside {
   float: left;
-  width: 40vw;
+  width: 30vw;
   background: green;
   height: 50vh;
   margin: 1%;
@@ -50,12 +85,21 @@ aside {
 
 footer {
   width: 12vw;
-  background: white;
+  background: lightblue;
   border-radius: 5%;
   clear: both;
 }
+
 .Video {
-  float: right;
+  float: left;
+  height: auto;
+  width: auto;
+}
+
+.Mapa {
+  float: left;
+  height: auto;
+  width: auto;
 }
 
 .ParrafoBlanco {
@@ -93,38 +137,51 @@ h2 {
 }
 
 .Imagen150x150:hover{
-  width: 5vw;
-}
-.Imagen150x150:hover{
   background: url("../imagenes/mariposa.jpg") no-repeat;
-}
-
-
-img:hover{
-  width: 10vw;
-  height: auto;
 }
 
 .RedSocial {
   height: 5vh;
   border-radius: 50%;
   align-items: center;
-
 }
+
+.RedSocial:hover{
+  width: 4.5vh;
+  height: auto;
+}
+
+img:hover{
+  width: 30vw;
+  height: auto;
+}
+
 /*********************************************************************************/
 /* Ventana Flotante loca Whats                                                                  */
 /*********************************************************************************/
 .ventanaFlotante {
   height: 10vh;
+  width: auto;
   border-radius: 50%;
+  border-color: green;
   top: 12%;
   margin-left: 88%;
   position: fixed;
+  opacity: 60%;
 }
+.ventanaFlotante:hover {
+  height: 14vh;
+  width: auto;
+  opacity: 90%;
+}
+
+
 .pieFlotante {
+  display: flex;
+  justify-content: space-around;
   height: 10vh;
   top: 92%;
-  margin-left: 40%;
+
   position: fixed;
 }
 /*********************************************************************************/
@@ -133,7 +190,7 @@ img:hover{
 
 .button
 {
-  display: inline-block;
+  display:  inline-block;
   margin-top: 1em;
   padding: 1em 1em;
   background: #C4376B;
