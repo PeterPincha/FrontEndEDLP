@@ -1,18 +1,28 @@
+@font-face {
+font-family: "FuenteDubai"; src: url("../fuentes/DUBAI-REGULAR.TTF") format("truetype");
+}
+@font-face {
+font-family: "FuenteMagnetob"; src: url("../fuentes/MAGNETOB.TTF") format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
 body {
   background-color: pink;
 }
+
 header {
   background-image:url('https://media.tycsports.com/files/2019/01/29/40299/choripan.jpeg')
 }
 p {
   color: black;
+  font-family: "FuenteMagnetob";
 }
 
 ul li {
   display: inline-block;
 }
 main {
-  float: left;
   width: 100vw;
   background: red;
   clear: both;
@@ -26,7 +36,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex-wrap: wrap;
 }
 .Contenedor{
   display: flex;
@@ -45,6 +54,10 @@ main {
   flex-direction: column;
   flex-flow: wrap;
 }
+.FlexDuplex{
+  display: flex;
+  justify-content:space-between;
+}
 .Pie {
   display: flex;
   justify-content:  center;
@@ -52,7 +65,7 @@ main {
 }
 
 nav {
-  float: left;
+
   width: 30vw;
   background: blue;
   height: 200vh;
@@ -63,7 +76,6 @@ nav {
   overflow: scroll;
 }
 section {
-  float:  right;
   width: 65vw;
   background: yellow;
   height: 60vh;
@@ -73,7 +85,6 @@ section {
   box-sizing: border-box;
 }
 aside {
-  float: left;
   width: 30vw;
   background: green;
   height: 50vh;
@@ -91,13 +102,11 @@ footer {
 }
 
 .Video {
-  float: left;
   height: auto;
   width: auto;
 }
 
 .Mapa {
-  float: left;
   height: auto;
   width: auto;
 }
@@ -115,6 +124,7 @@ footer {
   font-size: 1rem;
 }
 h1 {
+  font-family: "FuenteDubai";
   display: flex;
   justify-content: center;
   color: white;
@@ -125,7 +135,8 @@ h2 {
   display: flex;
   justify-content: left;
   color: red;
-  font-size: 3rem;
+
+  font-family: 'Macondo', cursive;
 }
 
 .ImagenMediana {
@@ -234,4 +245,32 @@ img:hover{
   font-weight: 600;
   font-size: 0.90em;
   color: #FFF;
+}
+
+.Celular1{
+  height: 15vh;
+  border-radius: 15%;
+}
+
+.Celular2{
+  height: 15vh;
+  border-radius: 15%;
+}
+
+@media (max-width: 700px) {
+header {background-image:none;}
+}
+@media (max-width: 750px) {
+.Video {display: none;}
+}
+@media (max-width: 800px) {
+.Mapa {display: none;}
+}
+
+@media (min-width: 750px) {
+.Celular1 {display: none;}
+}
+
+@media (min-width: 800px) {
+.Celular2 {display: none;}
 }
