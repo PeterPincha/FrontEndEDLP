@@ -139,18 +139,34 @@ h2 {
   font-family: 'Macondo', cursive;
 }
 
+.Imagen150x150 {
+  background: url("../imagenes/receta.jpg") no-repeat;
+  width: 180px;
+  height: 180px;
+  display:  block;
+
+}
+.Imagen150x150:hover{
+ background: url("../imagenes/marichimi.jpg") no-repeat;
+ width: auto;
+ max-height: 100%;
+}
+
 .ImagenMediana {
   display: block;
   width: 20vw;
 }
+.ImagenMediana:hover{
+  width: 25vw;
+  height: auto;
+}
 .ImagenGrande {
   width: 40vw;
 }
-
-.Imagen150x150:hover{
-  background: url("../imagenes/mariposa.jpg") no-repeat;
+.Grande:hover{
+  width: 45vw;
+  height: auto;
 }
-
 .RedSocial {
   height: 5vh;
   border-radius: 50%;
@@ -159,11 +175,6 @@ h2 {
 
 .RedSocial:hover{
   width: 4.5vh;
-  height: auto;
-}
-
-img:hover{
-  width: 30vw;
   height: auto;
 }
 
