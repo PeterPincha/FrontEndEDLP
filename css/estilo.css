@@ -4,8 +4,21 @@ font-family: "FuenteDubai"; src: url("../fuentes/DUBAI-REGULAR.TTF") format("tru
 @font-face {
 font-family: "FuenteMagnetob"; src: url("../fuentes/MAGNETOB.TTF") format("truetype");
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+
+.imgBoot{
+  height: 25vh;
+  width: auto;
+  overflow: hidden;
+  fill-rule: initial;
+}
+.imgBoot img{
+  transition: all 1.0s ease;
+}  
+.imgBoot:hover{
+  transform: scale(1.1);
+}
 
 body {
   background-color: pink;
@@ -65,7 +78,6 @@ main {
 }
 
 nav {
-
   width: 30vw;
   background: blue;
   height: 200vh;
@@ -197,22 +209,21 @@ h2 {
   opacity: 90%;
 }
 
-
 .pieFlotante {
   display: flex;
   justify-content: space-around;
   height: 10vh;
-  top: 92%;
-
+  top: 95%;
   position: fixed;
 }
 /*********************************************************************************/
 /* Button Style                                                                  */
 /*********************************************************************************/
-
 .button
 {
-  display:  inline-block;
+  display: flex;
+  justify-content: space-between;
+  /*display:  inline-block;*/
   margin-top: 1em;
   padding: 1em 1em;
   background: #C4376B;
@@ -227,11 +238,7 @@ h2 {
   font-weight: 600;
   font-size: 0.90em;
   color: #FFF;
-  style= text-decoration:none;
-}
-.button:hover
-{
-  background: #D64077;
+  text-decoration:none;
 }
 
 .button:active
@@ -258,14 +265,13 @@ h2 {
   color: #FFF;
 }
 
-.Celular1{
-  height: 15vh;
-  border-radius: 15%;
+.CelularBreck1{
+  height: 10vh;
+  border-radius: 50%;
 }
-
-.Celular2{
-  height: 15vh;
-  border-radius: 15%;
+.CelularBreck2{
+  height: 10vh;
+  border-radius: 50%;
 }
 
 @media (max-width: 900px) {
@@ -284,9 +290,9 @@ background-color: orange;}
 }
 
 @media (min-width: 750px) {
-.Celular1 {display: none;}
+.CelularBreck1 {display: none;}
 }
 
 @media (min-width: 800px) {
-.Celular2 {display: none;}
+.CelularBreck2 {display: none;}
 }
