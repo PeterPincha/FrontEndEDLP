@@ -221,9 +221,8 @@ h2 {
 /*********************************************************************************/
 .button
 {
-  display: flex;
-  justify-content: space-between;
-  /*display:  inline-block;*/
+  display: inline-flexbox;
+  justify-content: space-around;
   margin-top: 1em;
   padding: 1em 1em;
   background: #C4376B;
@@ -235,17 +234,19 @@ h2 {
   letter-spacing: 0.20em;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: 0.90em;
-  color: #FFF;
-  text-decoration:none;
+  font-weight: bold;
+  font-size: 1.00em;
+  color: white;
 }
 
 .button:active
 {
-  background: #BD3567;
+  color: green;
 }
-
+.button:hover
+{
+  color: red;
+}
 .buttonMenu
 {
   display: inline-block;
