@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,14 @@
   <meta name="keywords:" content="Asado, Cocina, Cancha, Choripan, Chimichurri, Carbon, Leña">
   <meta name="author:" content="Peter Norton">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/estilo.css">
-
-  <title>Receta tradicional de cancha</title>
+  <link rel="stylesheet" href="./css/estilo.css"> 
+  <title class="Titulo">Receta tradicional de cancha</title>
+  <script>
+    alert("Bienvenido ¿Estás dispuesto a ver el mejor sitio del mundo mundial?")
+  </script>
 </head>
-<body>
+
+<body id="cuerpo">
   <!--Aquí el Código Flotante-->
   <a href="https://api.whatsapp.com/send?text=https://peterpincha.github.io/FrontEndEDLP/ - https://peterpincha.github.io/FrontEndEDLP/">
     <img class="ventanaFlotante" src="./imagenes/whatsapp.png" alt="Nada" ></a>
@@ -26,7 +30,7 @@
     <br>
   </Header>
 </div>
-  <div class="Cabecera">
+  <div class="Principal">
   <main>
     <ul class="button">
       <li><a class="button" href="#Ingredientes">Ingredientes</li>
@@ -34,6 +38,7 @@
       <li><a class="button" href="#Finalmente">Finalmente</li>
       <li><a class="button" href="#Ubicacion">Ubicacion</li>
       <li><a class="button" href="contacto.html">Contacto</a></li>
+      <li><a class="button" ></a><button style="background-color: white;" onclick="cambiarFondoAClaro()"> Sitio visualmente inclusivo </button></li>
     </ul>
 </div>
 </main>
@@ -41,13 +46,13 @@
 <div class="Contenedor">
 
 <div class="Izquierda">
-<nav>
+<nav class="ContenedorNav">
     <h3 class="buttonMenu" id="Ingredientes">Lista de ingredientes:</h3>
     <ul>
       <li>Pan</li>
       <li>Chimichurri</li>
       <li>Salsa criolla</li>
-      <li>Corizo (de vaca o de cerdo))</li>
+      <li>Corizo (de vaca o de cerdo)</li>
     </ul>
     <br>
     <!-- Lista paso a paso-->
@@ -68,11 +73,11 @@
 
 <section>
   <div class="FlexDuplex">
-  <aside >
+  <aside class="ContenedorAnside">
   <p class="ParrafoAmarillo">Parrilla al carbon, vuelta y vuelta, con 15 minutos de coccion y luego se corta al medio en forma de mariposa</p>
   <img class="ImagenMediana" src="./imagenes/mariposa.jpg" alt="Mariposa">
 </aside>
-<aside>
+<aside class="ContenedorAnside">
 <!-- Video bochi cocinando-->
 <h3 class="buttonMenu" id="Finalmente">Finalmente:</h3>
 <p class="ParrafoNegro">El bochi (wtf???) nos enseña su secreto para preparar el chori de cancha</p>
@@ -86,7 +91,7 @@
 <section>
 <div class="FlexDuplex">
 
-<aside>
+<aside class="ContenedorAnside">
   <h3 class="buttonMenu">Recetas amigas:</h3><br>
   <a href="https://mauropeatencio.github.io/PotreroEDLP/" target="_blank"> <div class="Imagen150x150"></div></a><br>
   <a class="button" href="https://rociob88.github.io/clase3/" target="_blank">Receta 1</a>
@@ -94,10 +99,10 @@
   <a class="button" href="https://mauropeatencio.github.io/PotreroEDLP/" target="_blank">Receta 3</a>
 </aside>
 
-<aside>
+<aside class="ContenedorAnside">
 
-  <h3 class="buttonMenu" id="Ubicacion">Ubicacion:</h3>
-  <p>Lugar tipico donde se puede puede comper un buen chorizo</p>
+  <h3 class="buttonMenu">Ubicacion:</h3>
+  <p class="ParrafoNegro">Lugar tipico donde se puede puede comper un buen chorizo</p>
   <!-- Aca se comen los mejores choris, ubicacion-->
   <iframe class ="Mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3550.2553843017913!2d-57.940482918525106!3d-34.91238374574095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1650926227829!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <img class="CelularBreck2" src="./imagenes/celular.jpg" alt="No disponible en celular">
@@ -106,10 +111,10 @@
 </div>
 </section>
 
+  <!-- ACHICANDO LA WEB
 <section>
   <div class="FlexDuplex">
 <aside>
-  <!-- Imagen del chori dominguez local-->
     <p>De yapa, el chori mas famoso de todos... el chori Domingues</p>
   <img class="ImagenMediana" src="./imagenes/fotoChoriDominguez.jpg" alt="Que jugador!" >
   <br>
@@ -125,7 +130,7 @@
   </div>
 </aside>
 </div>
-</section>
+</section> -->
 </div>
 </div>
 
@@ -189,15 +194,19 @@
         <a target="_blank" href="https://www.facebook.com/dialog/feed?app_id=273012503131272&amp;link=https://peterpincha.github.io/FrontEndEDLP/">
           <img src="./imagenes/facebook.png" class="RedSocial" alt="FB"/></a>
         <a target="_blank" href="https://api.whatsapp.com/send?text=https://peterpincha.github.io/FrontEndEDLP/ - https://peterpincha.github.io/FrontEndEDLP/">
-          <img src="./imagenes/whatsapp.png" class="RedSocial" alt="whatsapp"/></a>
+          <img src="./imagenes/whatsapp2.png" class="RedSocial" alt="whatsapp"/></a>
         <a target="_blank" href="https://twitter.com/intent/tweet?url=https://peterpincha.github.io/FrontEndEDLP/">
           <img src="./imagenes/twitter.png" class="RedSocial" alt="TW"/></a>
         <a target="_blank" href="https://www.linkedin.com/shareArticle?=mini=true&amp;url=https://peterpincha.github.io/FrontEndEDLP/">
           <img src="./imagenes/linked.png" class="RedSocial" alt="linkedin"/></a>
         <a target="_blank" href="https://instagram.com/edelpoficial/">
           <img src="./imagenes/insta.jpg" class="RedSocial" alt="instagram"/></a>  
+        <img onclick="datosDeveloper()" src="./imagenes/acercade.jpg" class="RedSocial" alt="acerca de"/>  
+          
+        <!--<button onclick="datosDeveloper()">Acerca de</button> -->
     </footer>
-            
+
+    <script src="js/javascript.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
