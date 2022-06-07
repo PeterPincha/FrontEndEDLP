@@ -1,8 +1,8 @@
-function cambiarParrafoFondoClaro(parrafo) {
+function cambiarTarjetaFondoClaro(tarjeta) {
   try
   {
     // Selecting elements with class test
-    var matches = document.getElementsByClassName(parrafo);
+    var matches = document.getElementsByClassName(tarjeta);
 
     for(var elem in matches) {  
       matches[elem].style.color = "black";
@@ -14,11 +14,11 @@ function cambiarParrafoFondoClaro(parrafo) {
     catch{}
   }
 
-  function cambiarPieFondoClaro() {
+  function cambiarParrafoFondoClaro(parrafo) {
   try
   {
     // Selecting elements with class test
-    var matches = document.getElementsByClassName("Pie");
+    var matches = document.getElementsByClassName(parrafo);
 
     for(var elem in matches) {  
       matches[elem].style.color = "black";
@@ -37,7 +37,6 @@ function cambiarParrafoFondoClaro(parrafo) {
       var matches = document.getElementsByClassName(tipo);
       
       for(var elem in matches) {  
-        alert(matches[elem].style.fontFamily);
         matches[elem].style.color = "black";
         matches[elem].style.fontFamily = "Arial";        
       }
@@ -72,13 +71,14 @@ function cambiarFondoAClaro() {
   cambiarParrafoFondoClaro("ParrafoNegro");
   cambiarParrafoFondoClaro("ParrafoAmarillo");
 
+  cambiarTarjetaFondoClaro("card-body");
+
   cambiarContenedorFondoClaro("ContenedorAnside");
   cambiarContenedorFondoClaro("ContenedorNav");
 
   cambiarTextoFondoClaro("Titulo"); 
   cambiarTextoFondoClaro("SubTitulo"); 
-
-  cambiarPieFondoClaro();
+  cambiarTextoFondoClaro("CabeceraTitulo"); 
 }
 
 function welcome() {alert("Bienvenido ¿Estás dispuesto a ver el mejor sitio del mundo mundial?")}
